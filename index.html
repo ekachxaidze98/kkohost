@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0cba82bad3.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -15,7 +18,7 @@
         <div class="container">
             <div class="menu-items">
                 <div class="logo">
-                    <img src="img/logo-white.png" alt="">
+                    <img class="logo-icon" src="img/logo-white.png" alt="">
                 </div>
                 <div class="menu">
                     <ul class="menu-li">
@@ -25,7 +28,7 @@
                         <li><a href=""></a>Domain</li>
                         <li><a href=""></a>Afilliates</li>
                         <li><a href=""></a>Company</li>
-                        <li><a href="" class="btn-link">Client area</a></li>
+                        <li><a href="" class="btn-link"><i class="fas fa-user user-icon"></i>Client area</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +39,11 @@
         <div class="container">
             <div class="slider-items">
                 <div class="slider-item">
-                    <div class="sub-ttile">30% Discount first annual purchase</div>
+                    <div class="headline-container">
+                        <div class="headline">
+                            <p><i class="fas fa-bell bell"></i>30% Discount first annual purchase</p>
+                        </div>
+                    </div>
                     <h4 class="title">Unlimited Domain & Hosting in One Platform</h4>
                     <p class="text">A ton of website hosting options, 99.9% uptime guarantee, free SSL
                         certificate, easy WordPress installs.</p>
@@ -44,8 +51,46 @@
                         <a class="link" href="">Get Started Now</a>
                     </div>
                 </div>
-                <div class="slider-item">
+                <div class="slider-item center">
                     <img class="slider-img" src="img/hero-home (1).svg" alt="">
+                </div>
+            </div>
+            <div class="domain-section">
+                <div class="domain-items">
+                    <div class="domains">
+                        <div class="domain-item">
+                            <h4 class="text-center">Looking For Domain Name?</h4>
+                        </div>
+                        <div class="domain-item">
+                            <form class="form" action="">
+                                <input class="input" type="text" placeholder="yourdomainname.com" />
+                                <input class="input sm" type="text" placeholder="com" />
+                                <button class="submit" type="submit"><i class="fa fa-search"></i>Search</button>
+                            </form>
+                        </div>
+                        <div class="domain-item item-price">
+                            <div class="domain-price">
+                                <img class="domain-name" src="img/com.png" alt="">
+                                <span>$8.99</span>
+                            </div>
+                            <div class="domain-price">
+                                <img class="domain-name" src="img/online.png" alt="">
+                                <span>$0.99</span>
+                            </div>
+                            <div class="domain-price">
+                                <img class="domain-name" src="img/net.png" alt="">
+                                <span>$4.99</span>
+                            </div>
+                            <div class="domain-price">
+                                <img class="domain-name" src="img/org.png" alt="">
+                                <span>$2.99</span>
+                            </div>
+                            <div class="domain-price">
+                                <img class="domain-name" src="img/store.png" alt="">
+                                <span>$0.99</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,20 +100,20 @@
         <div class="container">
             <div class="title-container">
                 <div class="title-item">
-                    <h4 class="hosting-title">We Provide You World Class Best Hosting Features For You</h4>
-                    <p class="hosting-text">Uniquely repurpose strategic core competencies with progressive content.
+                    <h4 class="main-title">We Provide You World Class Best Hosting Features For You</h4>
+                    <p class="main-text">Uniquely repurpose strategic core competencies with progressive content.
                         Assertively transition ethical imperatives and collaborative manufactured products.</p>
                 </div>
             </div>
             <div class="hosting-items">
                 <div class="hosting-item">
-                    <i class="fas fa-lock fa-3x icon"></i>
+                    <i class="fas fa-cubes fa-3x icon"></i>
                     <h3 class="card-title">Fully functional</h3>
                     <p class="card-text">Phosfluorescently target bleeding sources through viral methodsp progressively
                         expedite empowered.</p>
                 </div>
                 <div class="hosting-item">
-                    <i class="fas fa-lock fa-3x icon"></i>
+                    <i class="fas fa-headset fa-3x icon"></i>
                     <h3 class="card-title">Fully functional</h3>
                     <p class="card-text">Phosfluorescently target bleeding sources through viral methodsp progressively
                         expedite empowered.</p>
@@ -87,14 +132,441 @@
         <div class="container">
             <div class="service-items">
                 <div class="service-item">
-                    <h4 class="title">Best Cloud HostingWith Trusted Service</h4>
-                    <p class="text">Objectively innovate high standards in methodologies vis-a-vis sustainable compellingly maintain multidisciplinary process proactively streamline mission-critical information via quality imperatives.</p>
+                    <h4 class="s-title">Best Cloud HostingWith Trusted Service</h4>
+                    <p class="s-text">Objectively innovate high standards in methodologies vis-a-vis sustainable
+                        compellingly maintain multidisciplinary process proactively streamline mission-critical
+                        information via quality imperatives.</p>
                     <div class="btn-container">
                         <a class="link" href="">Get Started Now</a>
                     </div>
                 </div>
                 <div class="service-item">
                     <img class="service-img" src="img/ds.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tools -->
+    <div class="tools-section">
+        <div class="container">
+            <div class="title-container">
+                <div class="title-item">
+                    <h4 class="main-title">Our Tools And Services For Optimize Website Building</h4>
+                    <p class="main-text">Uniquely repurpose strategic core competencies with progressive content.
+                        Assertively transition ethical imperatives and collaborative manufactured products.</p>
+                </div>
+            </div>
+            <div class="tool-items">
+                <div class="tool-item">
+                    <div class="top-card">
+                        <div class="card-item">
+                            <span>EASY & FIRST</span>
+                            <h4>Website Building</h4>
+                        </div>
+                        <i class="fas fa-shield-alt fa-3x icon"></i>
+                    </div>
+                    <p class="tooltext">Globally fashion client-focused synergy for accurate synergy. Quickly network
+                        cost effective ideas rather than standardized leadership. Interactively syndicate alternative
+                        opportunities via ubiquitous systems.</p>
+                    <div class="transparent-cont">
+                        <a class="transparant" href="">learn more</a>
+                    </div>
+                </div>
+                <div class="tool-item">
+                    <div class="top-card">
+                        <div class="card-item">
+                            <span>EASY & FIRST</span>
+                            <h4>Website Building</h4>
+                        </div>
+                        <i class="fab fa-wordpress fa-3x icon"></i>
+                    </div>
+                    <p class="tooltext">Globally fashion client-focused synergy for accurate synergy. Quickly network
+                        cost effective ideas rather than standardized leadership. Interactively syndicate alternative
+                        opportunities via ubiquitous systems.</p>
+                    <div class="transparent-cont">
+                        <a class="transparant" href="">learn more</a>
+                    </div>
+                </div>
+                <div class="tool-item">
+                    <div class="top-card">
+                        <div class="card-item">
+                            <span>EASY & FIRST</span>
+                            <h4>Website Building</h4>
+                        </div>
+                        <i class="fas fa-headset fa-3x icon"></i>
+                    </div>
+                    <p class="tooltext">Globally fashion client-focused synergy for accurate synergy. Quickly network
+                        cost effective ideas rather than standardized leadership. Interactively syndicate alternative
+                        opportunities via ubiquitous systems.</p>
+                    <div class="transparent-cont">
+                        <a class="transparant" href="">learn more</a>
+                    </div>
+                </div>
+                <div class="tool-item">
+                    <div class="top-card">
+                        <div class="card-item">
+                            <span>EASY & FIRST</span>
+                            <h4>Website Building</h4>
+                        </div>
+                        <i class="fas fa-dolly-flatbed fa-3x icon"></i>
+                    </div>
+                    <p class="tooltext">Globally fashion client-focused synergy for accurate synergy. Quickly network
+                        cost effective ideas rather than standardized leadership. Interactively syndicate alternative
+                        opportunities via ubiquitous systems.</p>
+                    <div class="transparent-cont">
+                        <a class="transparant" href="">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- price -->
+    <div class="pricing-section">
+        <div class="container">
+            <div class="title-container">
+                <div class="title-item">
+                    <h4 class="main-title">Our Flexible Pricing Plan</h4>
+                    <p class="main-text">Professional hosting at an affordable price. Distinctively recaptiualize
+                        principle-centered core competencies through client-centered core competencies.</p>
+                </div>
+            </div>
+            <div class="pricing-items">
+                <div class="pricing-item">
+                    <img class="pricing-icon" src="img/dadicate-web-hosting.svg" alt="">
+                    <h3 class="pricing-title">Web Hosting</h3>
+                    <p class="pricing-text">Large and enterprise business</p>
+                    <hr class="line">
+                    <span>Starting at</span>
+                    <div class="price">$8.99 /mo</div>
+                    <a class="pricing-btn" href="">Get started Now</a>
+                </div>
+                <div class="pricing-item">
+                    <img class="pricing-icon" src="img/vps-hosting.svg" alt="">
+                    <h3 class="pricing-title">Web Hosting</h3>
+                    <p class="pricing-text">Large and enterprise business</p>
+                    <hr class="line">
+                    <span>Starting at</span>
+                    <div class="price">$8.99 /mo</div>
+                    <a class="pricing-btn" href="">Get started Now</a>
+                </div>
+                <div class="pricing-item">
+                    <img class="pricing-icon" src="img/cloud-hosting.svg" alt="">
+                    <h3 class="pricing-title">Web Hosting</h3>
+                    <p class="pricing-text">Large and enterprise business</p>
+                    <hr class="line">
+                    <span>Starting at</span>
+                    <div class="price">$8.99 /mo</div>
+                    <a class="pricing-btn" href="">Get started Now</a>
+                </div>
+            </div>
+            <div class="pricing-footer-container">
+                <div class="pricing-footer">
+                    <div class="contacts top">
+                        <i class="fas fa-headset icon fa-lg"></i>
+                        <p>We're Here to Help You</p>
+                    </div>
+                    <div class="contacts bottom">
+                        <p>Have some questions?<a href=""> Chat with us now </a>or<a href="">send us an email</a>send us
+                            an email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about-section">
+        <div class="container">
+            <div class="about-items">
+                <div class="about-item">
+                    <div class="about-container">
+                        <h3 class="about-title">99% Cloud Hosing High-speed Cutting-edge Platform</h3>
+                        <p class="about-text">Authoritatively transform functionalized information without
+                            cross-platform convergence. Quickly reconceptualize cross-unit e-markets without superior
+                            products. Appropriately foster timely collaboration and idea-sharing rather than magnetic
+                            potentialities. Authoritatively restore high standards in outsourcing whereas vertical
+                            meta-services. Compellingly reconceptualize out-of-the-box outsourcing through plug-and-play
+                            synergy.</p>
+                        <div class="transparent-cont">
+                            <a class="transparant" href="">learn more</a>
+                        </div>
+                    </div>
+                    <div class="about-container none">
+                        <img class="about-img" src="img/services.svg" alt="">
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-container none">
+                        <img class="about-img" src="img/create-website.svg" alt="">
+                    </div>
+                    <div class="about-container">
+                        <h3 class="about-title">99% Cloud Hosing High-speed Cutting-edge Platform</h3>
+                        <p class="about-text">Authoritatively transform functionalized information without
+                            cross-platform convergence. Quickly reconceptualize cross-unit e-markets without superior
+                            products. Appropriately foster timely collaboration and idea-sharing rather than magnetic
+                            potentialities. Authoritatively restore high standards in outsourcing whereas vertical
+                            meta-services. Compellingly reconceptualize out-of-the-box outsourcing through plug-and-play
+                            synergy.</p>
+                        <div class="transparent-cont">
+                            <a class="transparant" href="">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- support -->
+    <div class="support-section">
+        <div class="container">
+            <div class="support-items">
+                <div class="support-item">
+                    <h4 class="s-title">24/7 Expert Hosting Support Our Customers Love</h4>
+                    <p class="s-text">Objectively innovate high compellingly maintain progressively pursue
+                        mission-critical information quality imperatives.</p>
+                    <div class="support-contacts">
+                        <div class="support-contact">
+                            <i class="fas fa-comment contact-icon"></i>
+                            <p>support@yourdomain.com</p>
+                        </div>
+                        <div class="support-contact">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <p>+00123456789</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-item none">
+                    <img class="support-img" src="img/call-center-support.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--testimonials -->
+    <div class="testimonial-section">
+        <div class="container">
+            <div class="title-container">
+                <div class="title-item">
+                    <h4 class="main-title">Our Lovely Client Say About Us</h4>
+                    <p class="main-text">Uniquely repurpose strategic core competencies with progressive content.
+                        Assertively transition ethical imperatives and collaborative manufactured products.</p>
+                </div>
+            </div>
+            <div class="testimonial-items">
+                <div class="testimonial-item">
+                    <h3 class="testimonial-title">Efficiently innovate app</h3>
+                    <p class="testimonial-text">Continually redefine sticky channels whereas extensive "outside the box"
+                        thinking. Rapidiously supply focused schemas vis-a-vis optimal users.</p>
+                    <div class="testimonial-authors">
+                        <div class="identity">
+                            <img class="testimonial-author" src="img/client-1.jpg" alt="">
+                        </div>
+                        <div class="identity">
+                            <p>Ann Jolly</p>
+                            <p>BizBite</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <h3 class="testimonial-title">Efficiently innovate app</h3>
+                    <p class="testimonial-text">Continually redefine sticky channels whereas extensive "outside the box"
+                        thinking. Rapidiously supply focused schemas vis-a-vis optimal users.</p>
+                    <div class="testimonial-authors">
+                        <div class="identity">
+                            <img class="testimonial-author" src="img/client-2.jpg" alt="">
+                        </div>
+                        <div class="identity">
+                            <p>Ann Jolly</p>
+                            <p>BizBite</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <h3 class="testimonial-title">Efficiently innovate app</h3>
+                    <p class="testimonial-text">Continually redefine sticky channels whereas extensive "outside the box"
+                        thinking. Rapidiously supply focused schemas vis-a-vis optimal users.</p>
+                    <div class="testimonial-authors">
+                        <div class="identity">
+                            <img class="testimonial-author" src="img/client-3.jpg" alt="">
+                        </div>
+                        <div class="identity">
+                            <p>Ann Jolly</p>
+                            <p>BizBite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog -->
+    <div class="blog-section">
+        <div class="container">
+            <div class="title-container">
+                <div class="title-item">
+                    <h4 class="main-title">Recent News and Events</h4>
+                    <p class="main-text">Efficiently matrix robust total linkage after market positioning bandwidth.
+                        Holisticly restore B2B materials rather than brand flexible paradigms vis-a-vis mission-critical
+                        e-commerce.</p>
+                </div>
+            </div>
+            <div class="blog-items">
+                <div class="blog-item">
+                    <h3 class="blog-title">Professionally cultivate testing</h3>
+                    <span> On 20 Mar, 2020</span>
+                    <hr class="hr">
+                    <p class="blog-text">Enthusiastically pursue tactical architectures vis-a-vis goal-oriented
+                        resources.</p>
+                    <div class="blog-footer">
+                        <div class="blog-coment">
+                            <i class="fas fa-comment"></i>
+                            <span>34</span>
+                            <span>comments</span>
+                        </div>
+                        <div class="blog-user">
+                            <i class="fas fa-portrait user fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <h3 class="blog-title">Professionally cultivate testing</h3>
+                    <span> On 20 Mar, 2020</span>
+                    <hr class="hr">
+                    <p class="blog-text">Enthusiastically pursue tactical architectures vis-a-vis goal-oriented
+                        resources.</p>
+                    <div class="blog-footer">
+                        <div class="blog-coment">
+                            <i class="fas fa-comment"></i>
+                            <span>34</span>
+                            <span>comments</span>
+                        </div>
+                        <div class="blog-user">
+                            <i class="fas fa-portrait user fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <h3 class="blog-title">Professionally cultivate testing</h3>
+                    <span> On 20 Mar, 2020</span>
+                    <hr class="hr">
+                    <p class="blog-text">Enthusiastically pursue tactical architectures vis-a-vis goal-oriented
+                        resources.</p>
+                    <div class="blog-footer">
+                        <div class="blog-coment">
+                            <i class="fas fa-comment"></i>
+                            <span>34</span>
+                            <span>comments</span>
+                        </div>
+                        <div class="blog-user">
+                            <i class="fas fa-portrait user fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Custome -->
+    <div class="Customer-section">
+        <div class="container">
+            <div class="title-container">
+                <div class="title-item">
+                    <h4 class="main-title">Lots of Customer Love Us</h4>
+                    <p class="main-text">Rapidiously morph transparent internal or sources whereas resource sucking
+                        e-business. Conveniently innovate formulate clicks-and-mortar manufactured products compelling
+                        internal.</p>
+                </div>
+            </div>
+            <div class="Customer-items">
+                <div class="custumer-item">
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/1.png" alt="">
+                    </div>
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/2.png" alt="">
+                    </div>
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/3.png" alt="">
+                    </div>
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/4.png" alt="">
+                    </div>
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/5.png" alt="">
+                    </div>
+                    <div class="cusomer-img-container">
+                        <img class="customer-img" src="img/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-items">
+                <div class="footer-item wider">
+                    <div class="footer-title"><img class="footer-icon" src="img/logo-white.png" alt=""></div>
+                    <p class="footer-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                        at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+                        dignissim enim.
+                    </p>
+                    <div class="footer-icons">
+                        <i class="fab fa-twitter icons"></i>
+                        <i class="fab fa-youtube icons"></i>
+                        <i class="fab fa-linkedin-in icons"></i>
+                        <i class="fab fa-dribbble icons"></i>
+                    </div>
+                </div>
+                <div class="footer-item links">
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a class="footer-link" href="">Help</a>
+                        <a class="footer-link" href="">events</a>
+                        <a class="footer-link" href="">live sesion</a>
+                        <a class="footer-link" href="">open source</a>
+                        <a class="footer-link" href="">documentation</a>
+                    </div>
+                </div>
+                <div class="footer-item links">
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a class="footer-link" href="">Help</a>
+                        <a class="footer-link" href="">events</a>
+                        <a class="footer-link" href="">live sesion</a>
+                        <a class="footer-link" href="">open source</a>
+                        <a class="footer-link" href="">documentation</a>
+                    </div>
+                </div>
+                <div class="footer-item links">
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a class="footer-link" href="">Help</a>
+                        <a class="footer-link" href="">events</a>
+                        <a class="footer-link" href="">live sesion</a>
+                        <a class="footer-link" href="">open source</a>
+                        <a class="footer-link" href="">documentation</a>
+                    </div>
+                </div>
+                <div class="footer-item links">
+                    <h4 class="footer-title">Resources</h4>
+                    <div class="footer-links">
+                        <a class="footer-link" href="">Help</a>
+                        <a class="footer-link" href="">events</a>
+                        <a class="footer-link" href="">live sesion</a>
+                        <a class="footer-link" href="">open source</a>
+                        <a class="footer-link" href="">documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-section">
+        <div class="container">
+            <div class="copyright-items">
+                <div class="authorship">
+                    © ThemeTags Design Agency, All rights reserved
+                </div>
+                <div class="template-info">
+                    <a href="">Terms & Condition </a>
+                    <a href="">Security </a>
+                    <a href="">Privacy Policy</a>
                 </div>
             </div>
         </div>
