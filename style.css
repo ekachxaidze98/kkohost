@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body {
+.wrapper {
+  position: relative;
   overflow: hidden;
 }
+
 /* menu */
 .menu-section {
   background-color: #0948b3;
@@ -26,19 +28,19 @@ body {
 .burger-menu {
   margin: 0 20px;
 }
-.burger-menu:hover .side-nav{
+.active{
   width: 40%;
-  right: 0;
+  right: 0!important;
 }
 
 .side-nav {
-  height: 100%;
-  width: 0;
-  top: 70px;
+  height: 100vh;
+  
+  top: 0px;
   z-index: 10;
   right: -100%;
   position: absolute;
-  background-color: #89a6e086;
+  background-color: #89a6e0e3;
   transition: all 0.35s ease-in;
 }
 .sidenav-menu {
