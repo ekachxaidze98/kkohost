@@ -19,23 +19,22 @@
   margin: auto;
 }
 
-.center {
+/* .center {
   align-items: center;
-}
+} */
 .burger-menu {
   display: none!important;
 }
-.burger-menu {
+/* .burger-menu {
   margin: 0 20px;
 }
 .active{
   width: 40%;
   right: 0!important;
-}
+} */
 
 .side-nav {
   height: 100vh;
-  
   top: 0px;
   z-index: 10;
   right: -100%;
